@@ -383,3 +383,77 @@ Below is a breakdown of 15 unique RISC-V instructions found in the provided obje
 - **Machine Code:** 00810593
 - **Instruction Binary:** 000000000000 0001 000 00000 0000011
 
+## Task-5:Function simulation of RISC-V core
+### perform Perform a functional simulation of the given RISC-V Core Verilog netlist and testbench.
+
+### Steps to perform functional simulation of RISCV
+
+1.**IN Ubuntu** Open the terminal and enter  the following commands  to install iverilog and GTKWave
+$ sudo apt get update
+$ sudo apt get install iverilog gtkwave
+
+2.To clone the repository and download the netlist files for simulation, use these commands in your terminal
+$ git clone https://github.com/vinayrayapati/iiitb_rv32i
+$ cd iiitb_rv32i
+
+3.make two files -  verilog file and testbench file 
+
+4.Copy the code from the reference github repository and paste it in your verilog file as well as  testbench file
+
+5.To run and simulate the verilog code, enter these  commands
+$ iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v
+$ ./iiitb_rv32i
+
+6.To see the simulation waveform in GTKWave, enter the following command:
+$ gtkwave iiitb_rv32i.vcd
+
+### Differences Between Standard RISC-V ISA and Hardcoded ISA
+
+| **Operation**      | **Standard RISC-V ISA** | **Hardcoded ISA** |
+|---------------------|-------------------------|-------------------|
+| ADD R6, R2, R1      | `32'h00110333`         | `32'h02208300`    |
+| SUB R7, R1, R2      | `32'h402083b3`         | `32'h02209380`    |
+| AND R8, R1, R3      | `32'h0030f433`         | `32'h0230a400`    |
+| OR R9, R2, R5       | `32'h005164b3`         | `32'h02513480`    |
+| XOR R10, R1, R4     | `32'h0040c533`         | `32'h0240c500`    |
+| SLT R1, R2, R4      | `32'h0045a0b3`         | `32'h02415580`    |
+| ADDI R12, R4, 5     | `32'h004120b3`         | `32'h00520600`    |
+| BEQ R0, R0, 15      | `32'h00000f63`         | `32'h00f00002`    |
+| SW R3, R1, 2        | `32'h0030a123`         | `32'h00209181`    |
+| LW R13, R1, 2       | `32'h0020a683`         | `32'h00208681`    |
+| SRL R16, R14, R2    | `32'h0030a123`         | `32'h00271803`    |
+| SLL R15, R1, R2     | `32'h002097b3`         | `32'h00208783`    |
+
+### Analysing the Output Waveform of various instructions
+
+### Instruction 1: ADD R6, R2, R1
+![add](https://github.com/user-attachments/assets/0e33e885-f23e-4696-ae38-0431b7a333df)
+
+### Instruction 2: AND R8, R1, R3
+![and](https://github.com/user-attachments/assets/ff2cb943-0892-4ac7-b333-1ecbfd7c31f0)
+
+### Instruction 3: OR R9, R2, R5
+![OR](https://github.com/user-attachments/assets/342a1035-e4c9-4b54-bf3c-4e3788272d5b)
+
+### Instruction 4: XOR R10, R1, R4
+![XOR](https://github.com/user-attachments/assets/e933e586-903e-4db1-a00f-1918e2b9733c)
+
+### Instruction 5: SLT R1, R2, R4
+![SLT](https://github.com/user-attachments/assets/f468e185-b819-4eb0-b655-6b831ac45497)
+
+### Instruction 6: ADDI R12, R4, 5
+![addi](https://github.com/user-attachments/assets/d3ba32c1-e82b-4625-aade-e11ca5e4b934)
+
+### Instruction 7: BEQ R0, R0, 15
+![BEQ](https://github.com/user-attachments/assets/95a0c61e-5b6a-401d-b32e-f7af5cb6a7d3)
+
+### Instruction 8: BNE R0, R1, 20
+![BEN](https://github.com/user-attachments/assets/7f0292e6-37e6-4a73-b5cc-ffd506725d75)
+
+### Instruction 9: SLL R15, R1, R2
+![SLL](https://github.com/user-attachments/assets/4c6a7e17-de68-4642-a45d-a5ea40fc3503)
+
+### Instruction 10: SUB R7, R1, R2
+![SUB](https://github.com/user-attachments/assets/3b7b7f57-a5dc-4771-84ca-e9c77a3b2825)
+
+
