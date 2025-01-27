@@ -383,29 +383,61 @@ Below is a breakdown of 15 unique RISC-V instructions found in the provided obje
 - **Machine Code:** 00810593
 - **Instruction Binary:** 000000000000 0001 000 00000 0000011
 
-## Task-5:Function simulation of RISC-V core
+## Task-4:Function simulation of RISC-V core
 ### perform Perform a functional simulation of the given RISC-V Core Verilog netlist and testbench.
 
-### Steps to perform functional simulation of RISCV
+# Functional Simulation of RISC-V (RV32I)
 
-1.**IN Ubuntu** Open the terminal and enter  the following commands  to install iverilog and GTKWave
-$ sudo apt get update
-$ sudo apt get install iverilog gtkwave
+This guide provides steps to perform the functional simulation of a RISC-V processor using iverilog and GTKWave.
 
-2.To clone the repository and download the netlist files for simulation, use these commands in your terminal
-$ git clone https://github.com/vinayrayapati/iiitb_rv32i
-$ cd iiitb_rv32i
+## Prerequisites
 
-3.make two files -  verilog file and testbench file 
+Ensure you are using **Ubuntu** to follow these steps.
 
-4.Copy the code from the reference github repository and paste it in your verilog file as well as  testbench file
+## Steps to Perform Simulation
 
-5.To run and simulate the verilog code, enter these  commands
-$ iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v
-$ ./iiitb_rv32i
+### 1. Install Required Tools
+Open the terminal and enter the following commands to install `iverilog` and `GTKWave`:
+```bash
+sudo apt-get update
+sudo apt-get install iverilog gtkwave
+```
 
-6.To see the simulation waveform in GTKWave, enter the following command:
-$ gtkwave iiitb_rv32i.vcd
+### 2. Clone the Repository
+Clone the GitHub repository containing the netlist files for simulation and navigate to the directory:
+```bash
+git clone https://github.com/vinayrayapati/iiitb_rv32i
+cd iiitb_rv32i
+```
+
+### 3. Create Verilog and Testbench Files
+Create two files:
+- A **Verilog file** for the RISC-V design.
+- A **Testbench file** for testing.
+
+### 4. Add Code
+Copy the Verilog and Testbench code from the [GitHub Repository](https://github.com/vinayrayapati/iiitb_rv32i) and paste it into your respective files.
+
+### 5. Run the Simulation
+To compile and simulate the Verilog code, use the following commands:
+```bash
+iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v
+./iiitb_rv32i
+```
+
+### 6. View the Simulation Waveform
+To view the waveform in GTKWave, run:
+```bash
+gtkwave iiitb_rv32i.vcd
+```
+
+## Output
+The waveform for the simulation will be displayed in GTKWave, showcasing the functionality of the RISC-V processor.
+
+---
+
+For more details, visit the [GitHub Repository](https://github.com/vinayrayapati/iiitb_rv32i).
+
 
 ### Differences Between Standard RISC-V ISA and Hardcoded ISA
 
