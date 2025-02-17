@@ -531,6 +531,9 @@ For more details, visit the [GitHub Repository](https://github.com/vinayrayapati
 ![circuit photo](https://github.com/user-attachments/assets/1aba05f7-fb41-4bc3-9fd3-d26bf8c6e3ff)
 
 
+## Task-6
+
+
 ```c
 #include "debug.h"
 
