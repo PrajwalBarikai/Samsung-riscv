@@ -488,4 +488,47 @@ For more details, visit the [GitHub Repository](https://github.com/vinayrayapati
 ### Instruction 10: SUB R7, R1, R2
 ![SUB](https://github.com/user-attachments/assets/3b7b7f57-a5dc-4771-84ca-e9c77a3b2825)
 
+## Task-5: Smart Motion Detection Alarm  
+
+### A compact and easy-to-install motion detection alarm using an ultrasonic radar sensor to detect trespassing and alert via a passive buzzer.  
+
+## Features  
+- **Easy Installation** – Simply place perpendicular to a solid surface.  
+- **Auto-Adjust** – Calibrates detection range within 10 seconds.  
+- **Adaptable Range** – Works between 0.1 – 4 meters.  
+- **Low Power** – Operates on 5V DC via adapter or battery bank.  
+- **Privacy-Friendly** – Suitable for private rooms.  
+
+## Components Required  
+
+| Component                  | Quantity | Description |
+|----------------------------|----------|-------------|
+| VSD Squadron Mini Board    | 1        | Development board |
+| USB-C Cable                | 1        | For power supply |
+| HC-SR04 Ultrasonic Sensor  | 1        | Distance measurement sensor |
+| Breadboard                 | 1        | For circuit connections |
+| Jumper Wires (Male-Male)   | 3        | For circuit connections |
+| Jumper Wires (Male-Female) | 3        | For circuit connections |
+| Red LED                    | 1        | Indicator light |
+| Passive Buzzer             | 1        | Alarm alert |
+| 220Ω Resistor              | 1        | For LED protection |
+| Toggle Switch              | 1        | Power control |
+
+## Installation  
+1. Connect components as per the circuit diagram.  
+2. Power with 5V DC (adapter or battery bank).  
+3. Place perpendicular to a solid surface.  
+4. Wait for auto-adjust (LED indicator).  
+5. Alarm triggers when motion is detected.  
+
+## How It Works  
+- The **ultrasonic sensor** continuously monitors the distance to the surface.  
+- On startup, it **auto-calibrates** to set a threshold distance.  
+- Any object passing through its detection field triggers the **buzzer alarm**.  
+
+---
+![working circuit](https://github.com/user-attachments/assets/cb601e0c-0aed-472a-bf1c-c10d7fb9e70f)
+![circuit photo 3](https://github.com/user-attachments/assets/5ee7f0cf-61ee-41ce-88e9-b2510ac77976)
+![circuits photo 2](https://github.com/user-attachments/assets/34a4e35e-641d-4015-96c9-b1395268523a)
+![circuit photo](https://github.com/user-attachments/assets/1aba05f7-fb41-4bc3-9fd3-d26bf8c6e3ff)
 
